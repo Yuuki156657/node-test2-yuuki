@@ -50,7 +50,7 @@ class AddProduct extends React.Component {
 
                     <h4>Updated at<br /><input type="text" name="updated" placeholder="Updated" value={this.state.updated}  onChange={this.handleInputChange} /></h4>
 
-                    <input type="submit" value="Save"/>
+                    <input type="submit" value="Save" />
                     <input type="submit" value="Cancel"/>
 
                     {/* <button><a href="/index"> Cancel</a></button> */}
