@@ -9,7 +9,7 @@ class AddProduct extends React.Component {
     constructor(){
         super();
         this.state = {
-            id: 1,
+            id: '',
             title: '',
             state: '',
             url: '',
