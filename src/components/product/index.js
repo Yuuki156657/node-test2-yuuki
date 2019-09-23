@@ -26,9 +26,15 @@ class ProductList extends React.Component {
 render(){
     return(
     <div>
-        <h3>Angular 6 MatTable CRUD Example</h3>
+        {/* <h3>Angular 6 MatTable CRUD Example</h3> */}
         <table border="1">
             <thead>
+                <tr className="tr1">
+                    <td className="td1" colSpan="7"><p className="h51">Angular 6 MatTable CRUD Example</p></td>
+                </tr>
+                <tr className="tr2">
+                    <td className="td2" colSpan="7"><p className="h52">Filter issues</p></td>
+                </tr>
                 <tr>
                     <th className="th1">Id</th>
                     <th className="th2">Title</th>
@@ -37,7 +43,6 @@ render(){
                     <th className="th5">Created at</th>
                     <th className="th6">Updated at</th>
                     <th className="th7">Action</th>
-
                 </tr>
             </thead>
             <tbody>

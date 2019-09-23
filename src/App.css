@@ -1,11 +1,13 @@
 .app {
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 20px;
   margin: 20px;
-  border: solid 1px black;
+  /* border: solid 1px black; */
+  text-align: center;
 }
 
 .plus {
+
   font-size: 30px;
   font-weight: bold;
 }

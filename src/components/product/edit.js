@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './style.css';
+
 
 
 class EditProduct extends React.Component {
@@ -39,6 +41,8 @@ class EditProduct extends React.Component {
                     <input type="text" name="updated" placeholder="Updated" defaultValue={this.props.product.updated} />
                     <br /><br />
                     <input type="submit" value="Save" />
+                    <button><a href="/index"> Cancel</a></button>
+
                     <br />
                 </form>
 

@@ -1,3 +1,7 @@
+/* .table, th, td {
+    border: solid 1px black;
+} */
+
 .th1, .th2, .th3, .th4, .th5, .th6, .th7 {
     padding: 0 60px 0 60px;
 }
@@ -5,3 +9,22 @@
 .add {
     text-align: center;
 }
+
+.h51 {
+    float: left;
+    padding-left: 10px;
+    color: white;
+}
+
+.td1 {
+    background-color: rgb(73, 21, 196);
+}
+
+.h52{
+    float: left;
+
+    padding-left: 10px;
+
+    color: gray;
+}
+
