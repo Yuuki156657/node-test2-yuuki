@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './app.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Link, Route, BrowserRouter } from 'react-router-dom';
+// import { Route, BrowserRouter } from 'react-router-dom';
+
+
+import ProductList from './components/product/index';
+import AddProduct from './components/product/add';
+import EditProduct from './components/product/edit';
+
+class App extends React.Component {
+  render(){
+    return(
+      <BrowserRouter>
+        <div className="app">
+          {/* <h3>CRUD with Redux</h3> */}
+          {/* <Link to="/index">Home</Link> | */}
+          <Link to="/Add" className="plus">+</Link>
+          <Route path="/" exact component={ProductList}></Route>
+          <Route path="/index" exact component={ProductList}></Route>
+          <Route path="/add" exact component={AddProduct}></Route>
+          <Route path="/edit/:id" exact component={EditProduct}></Route>
+          <br/><br/>
+          
+
+
+
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
